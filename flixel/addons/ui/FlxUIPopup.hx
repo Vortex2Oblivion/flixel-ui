@@ -73,9 +73,9 @@ class FlxUIPopup extends FlxUISubState implements IFlxUIWidget
 		return alpha = Value;
 	}
 
-	private function set_angle(Value:Float):Float
+	private function get_angle():Float
 	{
-		return angle = Value;
+		return angle;
 	}
 
 	private function set_facing(Value:FlxDirectionFlags):FlxDirectionFlags
