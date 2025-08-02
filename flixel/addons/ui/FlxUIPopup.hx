@@ -20,7 +20,8 @@ class FlxUIPopup extends FlxUISubState implements IFlxUIWidget
 		return immovable;
 	}
 
-	public var angle(default, set):Float;
+	@:isVar
+	public var angle(get, set):Float;
 	public var facing(default, set):FlxDirectionFlags;
 	public var moves(default, set):Bool;
 	public var offset(default, set):FlxPoint;
@@ -70,6 +71,11 @@ class FlxUIPopup extends FlxUISubState implements IFlxUIWidget
 	private function set_alpha(Value:Float):Float
 	{
 		return alpha = Value;
+	}
+
+	private function set_angle(Value:Float):Float
+	{
+		return angle = Value;
 	}
 
 	private function set_facing(Value:FlxDirectionFlags):FlxDirectionFlags
